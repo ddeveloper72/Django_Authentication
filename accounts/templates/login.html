@@ -27,7 +27,9 @@
 {% endif %}
 
 <form method="POST">
+    {% csrf_token %}
     {{ login_form}}
+    <button type="submit">login</button>
 </form>
     
 </body>
