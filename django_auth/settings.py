@@ -25,7 +25,10 @@ SECRET_KEY = '$ot@yiy)=@me9@6+hqp3ne(6nnzya-fhq6z77l(p7eoji0sp8o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME')]
+ALLOWED_HOSTS = [
+    os.environ.get('C9_HOSTNAME'),
+    os.environ.get('localhost', '127.0.0.1')
+]
 
 
 # Application definition
