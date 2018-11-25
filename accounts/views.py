@@ -51,10 +51,10 @@ def registration(request):
         return redirect(reverse('index')) # redirect a registerd user away from registration to the index
 
     if request.method == "POST":
-        registratio_form = UserRegistrationForm(request.POST)
+        registration_form = UserRegistrationForm(request.POST)
 
-        if registratio_form.is_valid():
-            registratio_form.save() # add the user data to the User model in the database
+        if registration_form.is_valid():
+            registration_form.save() # add the user data to the User model in the database
 
             user = auth.authenticate(username=request.POST['username'],
                                     password=request.POST['password1'])
