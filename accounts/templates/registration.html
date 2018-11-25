@@ -9,4 +9,9 @@ User Registration
 
 {% block content %}
 <p>If you have already registered, please login in <a href="{% url 'login' %}">here</a></p>
+<form method="POST">
+    {% csrf_token %}
+    {{ registration_form.as_p}} <!-- .as_p render this a paragraph -->
+    <button type="submit">Register</button>
+</form>
 {% endblock content %}
