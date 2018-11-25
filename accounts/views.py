@@ -47,6 +47,26 @@ def login(request):
 
 def registration(request):
     """Render the registration page"""
+    if request.user.is_authenticated:
+        return redirect(reverse('index')) # redirect a registerd user away from registration to the index
+
+    if request.method == "POST":
+        registratio_form = UserRegistrationForm(request.POST)
+
+        if registratio_form.is_valid():
+            registratio_form.save() # add the user data to the User model in the database
+
+            user = auth.authenticate(username=request.POST['username'],
+                                    password=request.POST['password1'])
+            
+            if user:
+               auth.login(user=user, request=request)
+               messages.success(request, "You have registerd successfully") 
+               return redirect(reverse('index')) # redirect the newly registerd user away from registration to the index
+        else:
+            messages.error(request, "Unable to register your account at this time") # an oops moment? Whats gone wrong...
+
     registration_form = UserRegistrationForm()
     return render(request, 'registration.html', {
         "registration_form": registration_form})
+
