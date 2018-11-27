@@ -6,7 +6,8 @@
 
 Welcome to my Django introduction tutorial on VSCode  
 
-[Code Institute](https://courses.codeinstitute.net/) tutorial was all about.
+The tutorial was taught by the
+[Code Institute](https://courses.codeinstitute.net/)
 
 This tutorial focused on creating a Django mini app which at its heart, lets a user
 perform CRUD operations on a simple local sqlite3 database. The data is user login details,
