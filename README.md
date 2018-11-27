@@ -122,7 +122,7 @@ EMAIL_PORT = 587
 ````
 
 ### From .vscode settings.json
-The reason why I'm showing this, is because one of the most challenging difficulties that I have has learning coding, had been learning to use the development software and configuring environments.  Learning to Understanding ones tools for coding is as essential as the projects themselves.
+The reason why I'm showing this, is because one of the most challenging aspects that I have while learning coding, had been learning to use the development software and configuring environments.  Learning to Understanding ones tools for coding is as essential as the projects themselves.
 
 ````javascript
 "terminal.integrated.env.windows": {
