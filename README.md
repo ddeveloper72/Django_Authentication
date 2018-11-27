@@ -95,7 +95,7 @@ urlpatterns = [
    multiple applicants registering on my site.  I had not nested my `def clean_email(self):`
    function inside of the `class UserRegistrationForm(UserCreationForm):`
 
-   * This is a learning mistake that took a few minutes to discover after conduction numerous test, adding
+   * This is a learning mistake that took a few minutes to discover after running numerous test, adding
    mew users to my User model and then consulting with colleagues on [#Slack](https://slack.com/) for ideas.  The value gained from understanding the error is enormous.
 
 ## 5 Setting up email interface in Django and VSCode tie-in
