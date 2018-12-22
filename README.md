@@ -14,6 +14,10 @@ perform CRUD operations on a simple local sqlite3 database. The data is user log
 a name, a password and an email address.  The user can cerate a simple profile which is managed
 by the Django admin panel.
 
+In the ecommerce tutorial, also by Code Institute, the auth app created in this tutorial was
+incorporated into the working online [Django E-Commerce Mini-Project](https://ddeveloper72-ecommerce.herokuapp.com).
+Check it out after you are happy with what you ahve read below about how the app is constructed.
+
 In this tutorial, we crate a *user login form* and a *user registration form*.
 
 We also create a password reset system that utilizes the built in Django facility to email a
