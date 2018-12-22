@@ -16,7 +16,7 @@ by the Django admin panel.
 
 In the ecommerce tutorial, also by Code Institute, the auth app created in this tutorial was
 incorporated into the working online [Django E-Commerce Mini-Project](https://ddeveloper72-ecommerce.herokuapp.com).
-Check it out after you are happy with what you ahve read below about how the app is constructed.
+Check it out after you are happy with what you have read below about how the app is constructed.
 
 In this tutorial, we crate a *user login form* and a *user registration form*.
 
